@@ -74,9 +74,9 @@
             <!-- Navigation Links -->
             <div class=" w-100 m-auto text-center">
                 <ul class="nav nav-pills">
-                    <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="runner_homescreen.html" class="nav-link">Home</a></li>
                     <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Event</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Profile</a></li>
+                    <li class="nav-item"><a href="runnerprofile.html" class="nav-link">Profile</a></li>
                     <!-- <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">About</a></li> -->
                 </ul>
@@ -138,29 +138,15 @@
                     <div class="col-12">
                         <label for="birthdate" class="form-label">วันเกิด</label>
                         <div class="input-group has-validation">
-                            <!-- Day -->
-                            <select class="form-select birthdate-select" id="birthdate-day" required="">
-                                <option value="">วันที่...</option>
-                                <!-- Add day options here -->
-                            </select>
-
-                            <!-- Month -->
-                            <select class="form-select birthdate-select" id="birthdate-month" required="">
-                                <option value="">เดือน...</option>
-                                <!-- Add month options here -->
-                            </select>
-
-                            <!-- Year -->
-                            <select class="form-select birthdate-select" id="birthdate-year" required="">
-                                <option value="">2023</option>
-                                <!-- Add year options here -->
-                            </select>
-
+                            <!-- Birthdate -->
+                            <input type="date" class="form-control" id="birthdate" required="">
+                    
                             <div class="invalid-feedback">
-                                Please select a valid birthdate.
+                                Please enter a valid birthdate.
                             </div>
                         </div>
                     </div>
+
 
                     <div class="col-12">
                         <label for="phoneNumber" class="form-label">เบอร์โทรศัพท์</label>

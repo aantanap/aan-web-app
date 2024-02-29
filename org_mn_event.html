@@ -74,10 +74,10 @@
                 <ul class="nav nav-pills">
                     <div class=" w-100 m-auto text-center">
                         <ul class="nav nav-pills">
-                            <li class="nav-item"><a href="runnerevent.html" class="nav-link active" aria-current="page">My Event</a></li>
+                            <li class="nav-item"><a href="runnerevent.html" class="nav-link active"
+                                    aria-current="page">My Event</a></li>
                             <li class="nav-item"><a href="orgprofile.html" class="nav-link">Profile</a></li>
-                    </div
-                </ul>
+                    </div </ul>
             </div>
 
 
@@ -118,7 +118,7 @@
                     <span class="slider round"></span>
                 </label>
                 <label for="hiringPhotographer" class="form-label" style="margin-left: 10px;">รับช่างถ่ายภาพ</label>
-                
+
             </div>
             <h4 class="mb-3">ข้อมูลกิจกรรม</h4>
             <form class="needs-validation" novalidate="">
@@ -131,7 +131,7 @@
                             Valid event name is required.
                         </div>
                     </div>
-                    
+
                     <!-- <div class="col-md-5">
                         <label for="gender" class="form-label">เพศ</label>
                         <select class="form-select" id="gender" required="">
@@ -142,30 +142,50 @@
 
                     </div> -->
 
-                    <div class="col-12">
+                    <!-- <div class="col-12">
                         <label for="eventDate" class="form-label">วันที่จัดกิจกรรม</label>
                         <div class="input-group has-validation">
-                            <!-- Day -->
+                            
                             <select class="form-select eventdate-select" id="eventdate-day" required="">
                                 <option value="">วันที่...</option>
-                                <!-- Add day options here -->
-                            </select>
-
-                            <!-- Month -->
                             <select class="form-select eventdate-select" id="eventdate-month" required="">
                                 <option value="">เดือน...</option>
-                                <!-- Add month options here -->
                             </select>
-
-                            <!-- Year -->
                             <select class="form-select eventdate-select" id="eventdate-year" required="">
                                 <option value="">2023</option>
-                                <!-- Add year options here -->
                             </select>
 
                             <div class="invalid-feedback">
                                 Please select a valid event date.
                             </div>
+                        </div>
+                    </div> -->
+
+                    <div class="col-12">
+                        <label for="eventDate" class="form-label">วันที่จัดกิจกรรม</label>
+                        <div class="input-group has-validation">
+                            <!-- Date -->
+                            <input type="date" class="form-control" id="eventDate" required="">
+
+                            <div class="invalid-feedback">
+                                Please select a valid event date.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <label for="eventTime" class="form-label">เวลาจัดกิจกรรม</label>
+                        <input type="time" class="form-control" id="eventTime" required="">
+                        <div class="invalid-feedback">
+                            Valid event time is required.
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <label for="eventTime" class="form-label">เวลาจบกิจกรรม</label>
+                        <input type="time" class="form-control" id="eventTime" required="">
+                        <div class="invalid-feedback">
+                            Valid event time is required.
                         </div>
                     </div>
 
@@ -370,87 +390,96 @@
                     <div class="col-12">
                         <label for="winner" class="form-label">ผู้ชนะ</label>
                         <div class="input-group has-validation">
-                    
-                            <input type="text" class="form-control" id="winDistance" placeholder="ระยะทาง" value="" required="">
+
+                            <input type="text" class="form-control" id="winDistance" placeholder="ระยะทาง" value=""
+                                required="">
                             <div class="invalid-feedback">
                                 Valid event win distance is required.
                             </div>
-                    
+
                             <input type="text" class="form-control" id="runnerNumber" placeholder="หมายเลข" value=""
                                 required="">
                             <div class="invalid-feedback">
                                 Valid event runner number is required.
                             </div>
-                    
+
                             <div class="invalid-feedback">
                                 Please select a valid distance and registration fee.
                             </div>
                         </div>
                         <div class="input-group has-validation">
-                        
-                            <input type="text" class="form-control" id="winDistance" placeholder="ระยะทาง" value="" required="">
+
+                            <input type="text" class="form-control" id="winDistance" placeholder="ระยะทาง" value=""
+                                required="">
                             <div class="invalid-feedback">
                                 Valid event win distance is required.
                             </div>
-                        
-                            <input type="text" class="form-control" id="runnerNumber" placeholder="หมายเลข" value="" required="">
+
+                            <input type="text" class="form-control" id="runnerNumber" placeholder="หมายเลข" value=""
+                                required="">
                             <div class="invalid-feedback">
                                 Valid event runner number is required.
                             </div>
-                        
+
                             <div class="invalid-feedback">
                                 Please select a valid distance and registration fee.
                             </div>
                         </div>
                         <div class="input-group has-validation">
-                        
-                            <input type="text" class="form-control" id="winDistance" placeholder="ระยะทาง" value="" required="">
+
+                            <input type="text" class="form-control" id="winDistance" placeholder="ระยะทาง" value=""
+                                required="">
                             <div class="invalid-feedback">
                                 Valid event win distance is required.
                             </div>
-                        
-                            <input type="text" class="form-control" id="runnerNumber" placeholder="หมายเลข" value="" required="">
+
+                            <input type="text" class="form-control" id="runnerNumber" placeholder="หมายเลข" value=""
+                                required="">
                             <div class="invalid-feedback">
                                 Valid event runner number is required.
                             </div>
-                        
+
                             <div class="invalid-feedback">
                                 Please select a valid distance and registration fee.
                             </div>
                         </div>
                         <div class="input-group has-validation">
-                        
-                            <input type="text" class="form-control" id="winDistance" placeholder="ระยะทาง" value="" required="">
+
+                            <input type="text" class="form-control" id="winDistance" placeholder="ระยะทาง" value=""
+                                required="">
                             <div class="invalid-feedback">
                                 Valid event win distance is required.
                             </div>
-                        
-                            <input type="text" class="form-control" id="runnerNumber" placeholder="หมายเลข" value="" required="">
+
+                            <input type="text" class="form-control" id="runnerNumber" placeholder="หมายเลข" value=""
+                                required="">
                             <div class="invalid-feedback">
                                 Valid event runner number is required.
                             </div>
-                        
+
                             <div class="invalid-feedback">
                                 Please select a valid distance and registration fee.
                             </div>
                         </div>
                         <div class="input-group has-validation">
-                        
-                            <input type="text" class="form-control" id="winDistance" placeholder="ระยะทาง" value="" required="">
+
+                            <input type="text" class="form-control" id="winDistance" placeholder="ระยะทาง" value=""
+                                required="">
                             <div class="invalid-feedback">
                                 Valid event win distance is required.
                             </div>
-                        
-                            <input type="text" class="form-control" id="runnerNumber" placeholder="หมายเลข" value="" required="">
+
+                            <input type="text" class="form-control" id="runnerNumber" placeholder="หมายเลข" value=""
+                                required="">
                             <div class="invalid-feedback">
                                 Valid event runner number is required.
                             </div>
-                        
+
                             <div class="invalid-feedback">
                                 Please select a valid distance and registration fee.
                             </div>
                         </div>
-                        
+
                     </div>
 
                     <hr class="my-4">
@@ -458,8 +487,12 @@
                     <a href="orghome.html">
                         <button class="w-100 btn btn-primary btn-lg" type="submit">บันทึก</button>
                     </a>
+                    <!-- จบงาน=ปิดรับลงทะเบียน ไม่โชว์ที่หน้าโฮม โชว์แค่หน้า My Event ของคนที่เคยลงทะเบียน -->
+                    <a href="orghome.html">
+                        <button class="w-100 btn btn-danger btn-lg" type="submit">จบงาน</button>
+                    </a>
                     <hr class="my-4">
-                    
+
                 </div>
             </form>
         </div>

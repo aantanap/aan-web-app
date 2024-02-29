@@ -146,27 +146,28 @@
                     <div class="col-12">
                         <label for="eventDate" class="form-label">วันที่จัดกิจกรรม</label>
                         <div class="input-group has-validation">
-                            <!-- Day -->
-                            <select class="form-select eventdate-select" id="eventdate-day" required="">
-                                <option value="">วันที่...</option>
-                                <!-- Add day options here -->
-                            </select>
-
-                            <!-- Month -->
-                            <select class="form-select eventdate-select" id="eventdate-month" required="">
-                                <option value="">เดือน...</option>
-                                <!-- Add month options here -->
-                            </select>
-
-                            <!-- Year -->
-                            <select class="form-select eventdate-select" id="eventdate-year" required="">
-                                <option value="">2023</option>
-                                <!-- Add year options here -->
-                            </select>
-
+                            <!-- Date -->
+                            <input type="date" class="form-control" id="eventDate" required="">
+                    
                             <div class="invalid-feedback">
                                 Please select a valid event date.
                             </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-6">
+                        <label for="eventTime" class="form-label">เวลาจัดกิจกรรม</label>
+                        <input type="time" class="form-control" id="eventTime" required="">
+                        <div class="invalid-feedback">
+                            Valid event time is required.
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-6">
+                        <label for="eventTime" class="form-label">เวลาจบกิจกรรม</label>
+                        <input type="time" class="form-control" id="eventTime" required="">
+                        <div class="invalid-feedback">
+                            Valid event time is required.
                         </div>
                     </div>
 

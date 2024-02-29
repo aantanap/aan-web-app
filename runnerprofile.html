@@ -171,32 +171,70 @@
                                     </select>
 
                                 </div>
-                                <div class="col-md-6">
+                                
+                                <div class="col-12">
                                     <label for="birthdate" class="form-label">วันเกิด</label>
                                     <div class="input-group has-validation">
-                                        <!-- Day -->
+                                        <!-- Birthdate -->
+                                        <input type="date" class="form-control" id="birthdate" required="">
+                                
+                                        <!-- Age Display -->
+                                        <div id="ageDisplay"></div>
+                                
+                                        <div class="invalid-feedback">
+                                            Please enter a valid birthdate.
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- <script>
+                                    // Event listener for input changes on the birthdate field
+                                    document.getElementById('birthdate').addEventListener('input', function () {
+                                        // Get the entered birthdate value
+                                        var birthdate = new Date(this.value);
+
+                                        // Check if a valid date is entered
+                                        if (!isNaN(birthdate.getTime())) {
+                                            // Calculate age
+                                            var today = new Date();
+                                            var age = today.getFullYear() - birthdate.getFullYear();
+
+                                            // Check if birthday has occurred this year
+                                            if (today.getMonth() < birthdate.getMonth() || (today.getMonth() === birthdate.getMonth() && today.getDate() < birthdate.getDate())) {
+                                                age--;
+                                            }
+
+                                            // Display the age
+                                            document.getElementById('ageDisplay').textContent = 'Age: ' + age + ' years';
+                                        } else {
+                                            // Display an error message if the entered date is not valid
+                                            document.getElementById('ageDisplay').textContent = '';
+                                            document.querySelector('.invalid-feedback').style.display = 'block';
+                                        }
+                                    });
+                                </script> -->
+
+                                <!-- <div class="col-md-6">
+                                    <label for="birthdate" class="form-label">วันเกิด</label>
+                                    <div class="input-group has-validation">
+                                        
                                         <select class="form-select birthdate-select" id="birthdate-day" required="">
                                             <option value="">วันที่...</option>
-                                            <!-- Add day options here -->
                                         </select>
 
-                                        <!-- Month -->
                                         <select class="form-select birthdate-select" id="birthdate-month" required="">
                                             <option value="">เดือน...</option>
-                                            <!-- Add month options here -->
                                         </select>
 
-                                        <!-- Year -->
                                         <select class="form-select birthdate-select" id="birthdate-year" required="">
                                             <option value="">2023</option>
-                                            <!-- Add year options here -->
                                         </select>
 
                                         <div class="invalid-feedback">
                                             Please select a valid birthdate.
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
 
                             <div class="row gx-3 mb-3">
